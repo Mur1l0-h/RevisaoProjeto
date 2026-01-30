@@ -74,6 +74,7 @@ Segurança (Fail-Safe): Se o sensor falhar ou o servidor central ficar inacessí
 +1
 
 👥 Equipe
+
 Murilo Almeida 
 
 Joel Neto 
