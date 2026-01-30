@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MVP - Semáforo Inteligente</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <h1>Sistema de Semáforo Inteligente</h1>
+
+    <div class="container">
+        <div class="semaforo">
+            <div id="luz-vermelha" class="luz vermelho"></div>
+            <div id="luz-amarela" class="luz amarelo"></div>
+            <div id="luz-verde" class="luz verde"></div>
+        </div>
+
+        <div class="controles">
+            <div class="control-group">
+                <label>Fluxo de Veículos:</label>
+                <select id="sensor-fluxo">
+                    <option value="baixo">Baixo (Normal)</option>
+                    <option value="alto">Alto (Pico)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Clima:</label>
+                <select id="sensor-clima">
+                    <option value="limpo">Céu Limpo</option>
+                    <option value="chuva">Chuva Forte</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Integridade do Sensor:</label>
+                <select id="sensor-status">
+                    <option value="ok">Operacional</option>
+                    <option value="falha">Falha Técnica</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Conexão com Servidor:</label>
+                <select id="status-servidor">
+                    <option value="online">Online</option>
+                    <option value="offline">Offline (Local)</option>
+                </select>
+            </div>
+            <div class="status-box" id="log">Iniciando sistema...</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
